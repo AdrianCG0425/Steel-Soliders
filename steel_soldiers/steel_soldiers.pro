@@ -10,10 +10,12 @@ CONFIG += c++11
 
 SOURCES += \
     main.cpp \
-    mainwindow.cpp
+    mainwindow.cpp \
+    soldado1.cpp
 
 HEADERS += \
-    mainwindow.h
+    mainwindow.h \
+    soldado1.h
 
 FORMS += \
     mainwindow.ui

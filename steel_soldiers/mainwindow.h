@@ -1,7 +1,12 @@
 #ifndef MAINWINDOW_H
 #define MAINWINDOW_H
-
+#include <QDesktopWidget>
+#include <QRectF>
+#include <QDebug>
 #include <QMainWindow>
+#include <QGraphicsScene>
+#include <QKeyEvent>
+#include "soldado1.h"
 
 QT_BEGIN_NAMESPACE
 namespace Ui { class MainWindow; }
@@ -17,5 +22,9 @@ public:
 
 private:
     Ui::MainWindow *ui;
+    soldado1 *principal;
+    QGraphicsScene *scene;
+    void keyPressEvent(QKeyEvent *evento);
+
 };
 #endif // MAINWINDOW_H
